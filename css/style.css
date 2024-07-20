@@ -40,3 +40,18 @@ body {
   height: 50px;
   width: 50px;
 }
+
+.search-bar {
+  background-color: #fafafc;
+}
+
+.contact-list img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* ------------- UTILITY CLASSES ------------- */
+
+.gray {
+  color: #bab9bc;
+}

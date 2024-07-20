@@ -23,7 +23,7 @@
     <div id="app">
       <div class="container-fluid bg-green-gray vh-100">
         <div class="container">
-          <div class="row justify-content-center align-items-center pt-2">
+          <div class="row justify-content-center align-items-center pt-4">
             <div class="user-section col-4">
               <div
                 class="profile-content d-flex justify-content-between align-items-center"
@@ -67,9 +67,34 @@
                   <a class="notifiche" href="">Attiva notifiche desktop</a>
                 </div>
               </div>
+              <div class="search-bar p-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder=" Cerca o inizia una nuova chat"
+                />
+              </div>
+              <div class="contact-list">
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex"
+                    v-for="(contact,index) in contacts"
+                  >
+                    <div class="icon-profile">
+                      <img :src="contact.avatar" alt="" />
+                    </div>
+                    <div class="chats ps-3">
+                      {{ contact.name }}
+                      <p class="gray">{{ contact.messages[0].message }}</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="col-8">
-              <h2>test</h2>
+              <h2>testo</h2>
             </div>
           </div>
         </div>
