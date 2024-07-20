@@ -17,8 +17,6 @@ body {
 
 .profile-content {
   background-color: #ebe9eb;
-  height: 100%;
-  width: 100%;
 }
 
 .myprofile img {
@@ -47,6 +45,11 @@ body {
 
 .contact-list img {
   height: 60px;
+  border-radius: 50%;
+}
+
+.profile-info img {
+  height: 70px;
   border-radius: 50%;
 }
 
