@@ -144,9 +144,12 @@
                     <input
                       type="text"
                       class="form-control mx-4"
+                      id="message-input"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
                       placeholder=" Scrivi un messaggio"
+                      v-model="messageText"
+                      @keydown.enter="sendMessage"
                     />
                     <a href="http://" target="_blank" rel="noopener noreferrer">
                       <i

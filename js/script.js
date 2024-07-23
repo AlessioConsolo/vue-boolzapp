@@ -166,12 +166,27 @@ createApp({
           ],
         },
       ],
+      messageText: "",
       selectedContact: null,
+      messages: [],
     };
   },
   methods: {
     selectContact(contact) {
       this.selectedContact = contact;
+    },
+    sendMessage() {
+      if (this.messageText !== "") {
+        const newMessage = { message: this.messageText, status: "sent" };
+        this.selectedContact.messages.push(newMessage);
+        this.messageText = "";
+        setTimeout(() => {
+          this.selectedContact.messages.push({
+            message: "ok",
+            status: "received",
+          });
+        }, 1000);
+      }
     },
   },
 }).mount("#app");

@@ -55,12 +55,13 @@ body {
 
 .chat-background {
   background-image: url("../img/mine.jpg");
-  height: 92%;
+  max-height: 92%;
   position: relative;
+  height: 92%;
 }
 
 .chat {
-  height: 91%;
+  max-height: 91%;
 }
 
 .type-bar {
@@ -92,6 +93,11 @@ body {
   border-radius: 10px;
   width: fit-content;
   float: left;
+}
+
+.messages {
+  overflow-y: scroll;
+  max-height: 739px;
 }
 
 /* ------------- UTILITY CLASSES ------------- */
