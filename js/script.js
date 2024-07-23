@@ -171,6 +171,9 @@ createApp({
       messages: [],
     };
   },
+  created() {
+    this.selectedContact = this.contacts[0];
+  },
   methods: {
     selectContact(contact) {
       this.selectedContact = contact;

@@ -99,9 +99,9 @@
               <div
                 class="profile-content d-flex justify-content-between align-items-center"
               >
-                <div class="profile-info">
-                  <img :src="contacts[0].avatar" alt="" class="p-2" />
-                  {{ contacts[0].name }}
+                <div class="profile-info" v-if="selectedContact">
+                  <img :src="selectedContact.avatar" alt="" class="p-2" />
+                  {{ selectedContact.name }}
                 </div>
                 <div class="profile-icons">
                   <i
