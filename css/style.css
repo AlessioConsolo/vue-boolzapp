@@ -10,9 +10,13 @@ body {
   line-height: 1.5;
 }
 
-.bg-green-gray {
-  background: rgb(0, 150, 135);
-  background: linear-gradient(to bottom, #009687 10%, #d7d7d2 0%);
+.user-section {
+  min-height: 883px;
+}
+
+.contact-list {
+  height: 670px;
+  background-color: white;
 }
 
 .profile-content {
@@ -108,4 +112,9 @@ body {
 
 .h-100px {
   height: 100px;
+}
+
+.bg-green-gray {
+  background: rgb(0, 150, 135);
+  background: linear-gradient(to bottom, #009687 10%, #d7d7d2 0%);
 }

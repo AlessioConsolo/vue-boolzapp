@@ -169,12 +169,20 @@ createApp({
       messageText: "",
       selectedContact: null,
       messages: [],
+      searchQuery: "",
     };
   },
   created() {
     this.selectedContact = this.contacts[0];
   },
   methods: {
+    filterContacts() {
+      return this.contacts.filter((contact) => {
+        return contact.name
+          .toLowerCase()
+          .includes(this.searchQuery.toLowerCase());
+      });
+    },
     selectContact(contact) {
       this.selectedContact = contact;
     },
