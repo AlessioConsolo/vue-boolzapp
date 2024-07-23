@@ -77,7 +77,7 @@ body {
 
 .user-style {
   background-color: #d7f9bc;
-  padding: 13px 13px 13px 200px;
+  padding: 13px 75px 13px 13px;
   border-radius: 10px;
   width: fit-content;
   float: right;
@@ -88,7 +88,7 @@ body {
 
 .contact-style {
   background-color: #fffeff;
-  padding: 13px 200px 13px 13px;
+  padding: 13px 75px 13px 13px;
   border-radius: 10px;
   width: fit-content;
   float: left;
@@ -98,4 +98,8 @@ body {
 
 .gray {
   color: #bab9bc;
+}
+
+.h-100px {
+  height: 100px;
 }

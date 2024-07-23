@@ -120,8 +120,9 @@
                 <div class="chat w-100">
                   <div class="messages">
                     <p
-                      v-for="(message, index) in contacts[0].messages"
+                      v-for="(message, index) in contacts[1].messages"
                       :key="index"
+                      class="h-100px m-3"
                     >
                       <span v-if="message.status === 'sent'" class="user-style"
                         >{{ message.message }}</span
