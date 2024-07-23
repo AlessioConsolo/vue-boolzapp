@@ -53,6 +53,18 @@ body {
   border-radius: 50%;
 }
 
+.chat-background {
+  background-image: url("../img/mine.jpg");
+  height: 92%;
+}
+
+.type-bar {
+  background-color: #f5eeeb;
+  height: 9%;
+  width: 100%;
+  align-self: flex-end;
+}
+
 /* ------------- UTILITY CLASSES ------------- */
 
 .gray {
