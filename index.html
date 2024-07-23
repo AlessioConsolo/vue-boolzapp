@@ -81,6 +81,8 @@
                   <li
                     class="list-group-item d-flex"
                     v-for="(contact,index) in contacts"
+                    :key="index"
+                    @click="selectContact(contact)"
                   >
                     <div class="icon-profile">
                       <img :src="contact.avatar" alt="" />
@@ -118,9 +120,9 @@
               </div>
               <div class="chat-background d-flex">
                 <div class="chat w-100">
-                  <div class="messages">
+                  <div class="messages" v-if="selectedContact">
                     <p
-                      v-for="(message, index) in contacts[1].messages"
+                      v-for="(message, index) in selectedContact.messages"
                       :key="index"
                       class="h-100px m-3"
                     >
