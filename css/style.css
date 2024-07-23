@@ -56,6 +56,11 @@ body {
 .chat-background {
   background-image: url("../img/mine.jpg");
   height: 92%;
+  position: relative;
+}
+
+.chat {
+  height: 91%;
 }
 
 .type-bar {
@@ -63,6 +68,30 @@ body {
   height: 9%;
   width: 100%;
   align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+.user-messages {
+}
+
+.user-style {
+  background-color: #d7f9bc;
+  padding: 13px 13px 13px 200px;
+  border-radius: 10px;
+  width: fit-content;
+  float: right;
+}
+
+.contact-messages {
+}
+
+.contact-style {
+  background-color: #fffeff;
+  padding: 13px 200px 13px 13px;
+  border-radius: 10px;
+  width: fit-content;
+  float: left;
 }
 
 /* ------------- UTILITY CLASSES ------------- */
